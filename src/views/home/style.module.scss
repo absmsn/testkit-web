@@ -1,0 +1,31 @@
+.body-wrapper{
+  $header-height:3rem;
+  $sidebar-width:3rem;
+  .header{
+    width: 100%;
+    height: $header-height;
+    box-shadow: 0 0 10px #cfcfcf;
+    position: fixed;
+  }
+  .sidebar{
+    width: $sidebar-width;
+    .menu{
+      .menu-item{
+        height: 2rem;
+        .avatar{
+          width: 100%;
+        }
+        .content{
+          display: none;
+          &:hover, &:active{
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+  .content-area{
+    margin-top: $header-height;
+    margin-left: $sidebar-width;
+  }
+}

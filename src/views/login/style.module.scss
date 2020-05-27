@@ -1,0 +1,18 @@
+.mainWrapper{
+    background: #fbfbfb;
+    position: relative;
+    .displayArea{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        max-width: 364px;
+        position: absolute;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px #cfcfcf;
+        .email{
+        }
+    }
+}
