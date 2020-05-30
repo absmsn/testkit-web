@@ -18,7 +18,7 @@ function Login(props) {
       email,
       password
     }).then(res => {
-      const { token, userName, message} = res.data
+      const { token, userName, message } = res.data
       switch (message) {
         case 'correct password':
           store.dispatch({
@@ -45,24 +45,22 @@ function Login(props) {
   }
 
   return (
-    <div className='login'>
-      {/* 单引号 */}
-      <div className={style.mainWrapper}>
-        <div className={style.displayArea}>
-          <form onSubmit={login}>
-            <div className={style.email}
-              onChange={e => setEmail(e.target.value)}>
-              <input placeholder='邮箱' name='email' />
-            </div>
-            <div>
-              <input type='password' placeholder='密码' name='password'
-                onChange={e => setPassowrd(e.target.value)} />
-            </div>
-            <div><button type='submit'>登录</button></div>
-            <div><a href='#'>忘记密码</a></div>
-            <div><Link to='/signup'>没有帐户?注册</Link></div>
-          </form>
-        </div>
+    <div className={style.mainWrapper}>
+    {/*类名要用单引号*/ }
+      <div className={style.displayArea}>
+        <form onSubmit={login}>
+          <div className={style.email}
+            onChange={e => setEmail(e.target.value)}>
+            <input placeholder='邮箱' name='email' />
+          </div>
+          <div>
+            <input type='password' placeholder='密码' name='password'
+              onChange={e => setPassowrd(e.target.value)} />
+          </div>
+          <div><button type='submit'>登录</button></div>
+          <div><a href='#'>忘记密码</a></div>
+          <div><Link to='/signup'>没有帐户?注册</Link></div>
+        </form>
       </div>
     </div>
   )

@@ -21,9 +21,8 @@ function Signup(props) {
   }
 
   return (
-    <div className="login">
-      {/* 单引号 */}
       <div className={style.mainWrapper}>
+      {/* 单引号 */}
         <div className={style.displayArea}>
           <form onSubmit={signup}>
             <div>
@@ -43,7 +42,6 @@ function Signup(props) {
           </form>
         </div>
       </div>
-    </div>
   )
 }
 
