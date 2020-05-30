@@ -1,22 +1,20 @@
 import React from 'react'
+import style from './style.module.scss'
 
 function Home() {
   return (
-    <div className="home">
-      <div className="body-wrapper">
-        <div className="header"></div>
-        <div className="sidebar">
-          <div className="menu">
-            <div className="menu-item">
-              <div className="avatar"></div>
-              <div className="content"></div>
-            </div>
+    <div className={style.bodyWrapper}>
+      <div className={style.header}></div>
+      <div className={style.sidebar}>
+        <div className={style.menu}>
+          <div className={style.menuItem}>
+            <div className={style.avatar}></div>
+            <div className={style.content}></div>
           </div>
         </div>
-        <div className="content-area">
-        </div>
       </div>
-      <div>Home</div>
+      <div className={style.contentArea}>
+      </div>
     </div>
   )
 }

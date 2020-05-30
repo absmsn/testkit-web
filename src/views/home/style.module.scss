@@ -1,4 +1,4 @@
-.body-wrapper{
+.bodyWrapper{
   $header-height:3rem;
   $sidebar-width:3rem;
   .header{
@@ -10,7 +10,7 @@
   .sidebar{
     width: $sidebar-width;
     .menu{
-      .menu-item{
+      .menuItem{
         height: 2rem;
         .avatar{
           width: 100%;
@@ -24,7 +24,7 @@
       }
     }
   }
-  .content-area{
+  .contentArea{
     margin-top: $header-height;
     margin-left: $sidebar-width;
   }
