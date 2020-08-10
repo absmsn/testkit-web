@@ -1,0 +1,12 @@
+.mainWrapper{
+  $icon-width:32px;
+  display: grid;
+  height: 48px;
+  position: fixed;
+  .headerIcon{
+    width: $icon-width;
+  }
+  .operationArea{
+
+  }
+}

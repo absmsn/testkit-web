@@ -1,0 +1,29 @@
+.mainWrapper {
+  background-color: #fbfbfb;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  .mainArea {
+    transform: translateY(-50%);
+
+    .headerText {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .contentText {
+      color: #808080;
+    }
+
+    input {
+      width: 12rem;
+    }
+
+    >div {
+      margin: 20px 0;
+    }
+  }
+}

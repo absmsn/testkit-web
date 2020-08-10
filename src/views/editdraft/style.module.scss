@@ -1,0 +1,134 @@
+.mainWrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  height: 100vh;
+
+  .infoOverview {
+    margin: 20px 10px 0 10px;
+
+    .headerText {
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-align: left;
+      padding: 0 10px;
+    }
+
+    .testInfo,
+    .answererInfo {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px 5px;
+
+      .infoItemTagContainer {
+        .infoItemTag {
+          float: left;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .infoItemContentContainer {
+        color: #808080;
+
+        .infoItemContent {
+          float: left;
+        }
+      }
+    }
+  }
+
+  .editContainer {
+    box-shadow: 0 0 10px #cfcfcf;
+    padding: 10px 10px 0 10px;
+
+    .addQuestionBtnGroup {
+      display: flex;
+    }
+
+    .editArea {
+      .questionArea {
+        display: flex;
+        margin: 20px 0;
+
+        .questionNo {
+          font-size: 1.25rem;
+          font-weight: 600;
+          margin: 0 20px;
+        }
+
+        .question {
+          border: 1px solid #cfcfcf;
+          border-radius: 8px;
+          padding: 10px;
+          text-align: left;
+          max-width: 300px;
+
+          >* {
+            >* {
+              margin-bottom: 10px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+
+            margin-bottom: 20px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          .headerText {
+            font-size: 1.125rem;
+            font-weight: 600;
+          }
+        }
+
+        .singleChoice,
+        .multiChoice {
+          .choiceGroup {
+            padding-left: 0;
+            padding-right: 0;
+
+            .choiceItem {
+              display: flex;
+              margin-bottom: 5px;
+
+              .choiceRadio {
+                display: flex;
+                align-items: center;
+              }
+
+              .choiceItemDelete {
+                width: 30px;
+                flex: 0 0 30px;
+                padding: 4px;
+                border-radius: 2px;
+                margin-left: 10px;
+
+                &:hover {
+                  background-color: #f4f4f4;
+                  transition: 0.25s background-color ease-in;
+                }
+              }
+            }
+          }
+
+          .addChoiceButton {}
+
+          .questionOption {
+          }
+          .questionScore {
+            span{
+              margin: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .questionOverview {}
+}
